@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css-home.css">
+    <script src="/js-home.js" defer></script>
+    <script src="/js-register.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <img src="/kit.png" class="kitlogo" alt="Logo">
+        <h1 class="head_text">KIT-KALAIGNARKARUNANIDHI INSTITUTE OF TECHNOLOGY</h1>
+        <div class="head_xerox" id="custom-tooltip-container" onclick="window.location.href='/xeroxHome'">
+            <button class="custom-tooltip-btn">Xerox</button>
+            <div class="custom-tooltip-content">
+              <span class="custom-tooltip-arrow"></span>
+              <p class="custom-tooltip-text">
+                Most affordable prices for KIT College with fast delivery service.
+              </p>
+            </div>
+          </div>
+   
+        <p class="head_status" id="status">Status</p>
+        <div class="status_box" id="statuspop">
+            <form onsubmit="statusMessage(event)">
+                <div class="register-title-back">
+                    <h2>Status</h2>
+                </div>
+                <p class="search_text">Register-Number</p>
+                <input type="text" class="search" name="track" placeholder="711521BCS026" required><br>
+                <button type="submit" class="track_btn" id="sub" >Track</button>
+            </form>
+        </div>
+
+        <p class="head_history" id="history">History</p>
+        <div class="history_box" id="historypop">
+            <form onsubmit="historyview(event)">
+                <div class="register-title-back">
+                    <h2>History</h2>
+                </div>
+                <p class="history_search_text">Register-Number</p>
+                <input type="text" class="history" name="history" placeholder="711521BCS026" required><br>
+                <button type="submit" class="history_btn" >History</button>
+            </form>
+        </div>
+
+        <p class="head_contact" id="contact">Contact</p>
+    </header>
+
+    <div class="back"></div>
+    <div id="card" class="card1">
+        <div class="log">Login as</div>
+        <div class="log-border"></div>
+        <div class="card-content">
+            <button class="staff" onclick="window.location.href='/Departments'"></button>
+            <button class="student" onclick="window.location.href='/StudentLogin'"></button>
+            <button class="principal" onclick="window.location.href='/PrincipalLogin'"></button>
+            <button class="admin" onclick="window.location.href='/AdminLogin'"></button>
+        </div>
+    </div>
+
+    
+    <div class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3 class="logo-text">About Website</h3>
+                    <p>Streamline Pass requests digitally, eliminating paperwork for a more efficient process.</p>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="https://portal.kitcbe.com/">Kit-Portal</a></li>
+                        <li><a href="https://kit.learnlogicify.com/login/index.php">Kit-Placement Portal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> &nbsp; 7395851198</p>
+                    <p><i class="fas fa-envelope"></i> &nbsp; mani091m1@gmail.com</p>
+                </div>
+                <div class="social-button"> 
+                    <i class="fas fa-plus"></i>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/mani091" target="_blank" class="social-icon"><img src="/linkedin.png" alt="LinkedIn"></a>
+                        <a href="mailto:mani091m1@gmail.com" class="social-icon"><img src="/mail.png" alt="Email"></a>
+                        <a href="https://www.instagram.com/mani_.091/" class="social-icon" ><img src="/instagram.png" ></a>
+                    </div>
+                    <p class="admin-title">Admin/Dev</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 kitdigitalpass.com | All rights reserved
+        </div>
+      </div>
+      <div class="non-desktop-message">
+        This site is best viewed on a desktop. Please use a computer for an optimal experience.
+      </div>
+      
+
+</body>
+
+</html>

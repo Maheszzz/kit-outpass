@@ -1,0 +1,251 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    padding: 40px 10px; /* Reduced padding */
+    max-width: 1000px; /* Reduced width */
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2em; /* Reduced font size */
+    margin-bottom: 15px; /* Reduced margin */
+    color: #2c3e50;
+}
+
+.description {
+    margin: 15px auto;
+    max-width: 700px; /* Slightly reduced max width */
+    font-size: 1em; /* Reduced font size */
+    line-height: 1.4; /* Slightly reduced line height */
+    color: #7f8c8d;
+}
+
+/* Buttons */
+.buttons {
+    margin: 30px auto; /* Reduced margin */
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Reduced gap */
+}
+
+.buttons button {
+    width: 180px; /* Reduced width */
+    height: 45px; /* Reduced height */
+    font-size: 1em; /* Reduced font size */
+    font-weight: 600;
+    border: none;
+    border-radius: 25px; /* Reduced border radius */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+}
+
+.owner-btn, .buyer-btn {
+    color: white;
+}
+
+.owner-btn {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+.buyer-btn {
+    background: linear-gradient(135deg, #28a745, #1e7e34);
+}
+
+.owner-btn:hover {
+    background: linear-gradient(135deg, #0056b3, #003d7a);
+    transform: translateY(-3px);
+}
+
+.buyer-btn:hover {
+    background: linear-gradient(135deg, #1e7e34, #155d27);
+    transform: translateY(-3px);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+/* Cards */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Reduced gap */
+    margin-top: 70px; /* Reduced margin */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 280px; /* Reduced width */
+    height: 360px; /* Reduced height */
+    background-color: #ffffff;
+    border-radius: 15px; /* Reduced border radius */
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out, box-shadow 0.3s ease;
+    transform: translateX(100%);
+    padding: 15px; /* Reduced padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+.card-img {
+    width: 100%;
+    height: 50%; /* Reduced height */
+    background-color: #ddd;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card-info {
+    padding: 10px;
+    text-align: left;
+}
+
+.text-title {
+    font-weight: 600;
+    font-size: 1.2em; /* Reduced font size */
+    color: #2c3e50;
+}
+
+.text-body {
+    font-size: 0.9em; /* Reduced font size */
+    color: #7f8c8d;
+}
+
+.card:hover {
+    transform: scale(1.03); /* Slightly reduced scaling */
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover .card-img {
+    transform: scale(1.08); /* Slightly reduced scaling */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em; /* Further reduced font size */
+    }
+
+    .description {
+        font-size: 0.9em; /* Further reduced font size */
+    }
+
+    .buttons button {
+        width: 160px; /* Further reduced width */
+        font-size: 0.9em; /* Further reduced font size */
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 85%; /* Reduced width for smaller screens */
+        margin: 15px 0;
+    }
+}
+/* General card styles remain the same */
+.card {
+    position: relative;
+    overflow: hidden;
+    /* Existing styles */
+}
+
+.card-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.card:hover .card-video {
+    opacity: 1;
+}
+
+.card-img {
+    transition: opacity 0.5s ease;
+}
+
+.card:hover .card-img {
+    opacity: 0;
+}
+
+.faq-container {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    margin-top: 50px;
+    max-width: 2000px;
+    margin-left:20px ;
+    text-align: left;
+}
+
+.faq-container h2 {
+    font-size: 1.2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.faq-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faq-question {
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: .9em;
+    margin: 0;
+}
+
+.faq-answer {
+    font-size: 0.8em;
+    color: #7f8c8d;
+    margin-top: 10px;
+    display: none;
+    transition: opacity 0.3s ease;
+}
+
+/* Show the answer when the user hovers over the question */
+.faq-item:hover .faq-answer {
+    display: block;
+    opacity: 1;
+}
+
+.faq-item:hover {
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.faq-item:not(:hover) .faq-answer {
+    opacity: 0;
+}
